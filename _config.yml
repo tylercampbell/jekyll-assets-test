@@ -1,0 +1,14 @@
+title: jekyll-assets 2 test
+livereload: true
+plugins :
+  - jekyll-assets
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .asset-cache
