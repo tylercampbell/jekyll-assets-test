@@ -7,3 +7,10 @@ body {
   // autoprefixer test:
   transition: all 0s;
 }
+
+svg {
+  width: 200px;
+  path {
+    fill: $primary;
+  }
+}
