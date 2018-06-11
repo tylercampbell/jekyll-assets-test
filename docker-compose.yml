@@ -3,6 +3,7 @@ services:
   site:
     environment:
       - COMPOSE_CONVERT_WINDOWS_PATHS=1
+      - FORCE_APK_INSTALL=true
     command: jekyll serve --config _config.yml,_config.development.yml
     image: jekyll/jekyll:latest
     volumes:
