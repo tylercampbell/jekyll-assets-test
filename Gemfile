@@ -7,10 +7,10 @@ group :jekyll_plugins do
 end
 
 group :jekyll_assets do
-  gem 'uglifier', '~> 3.2'
-  gem 'sass', '~> 3.5'
-  gem 'autoprefixer-rails', '~> 7.1'
-  gem "mini_magick", '~> 4.8' #Requires ImageMagick or GraphicsMagick command-line tool. https://github.com/minimagick/minimagick
+  gem 'uglifier'
+  gem 'sass'
+  gem 'autoprefixer-rails'
+  gem "mini_magick"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
