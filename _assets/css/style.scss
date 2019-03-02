@@ -1,0 +1,14 @@
+// sass test:
+$purple: HSLA(279, 21%, 52%);
+
+svg {
+  width: 128px;
+  path {
+    fill: $purple;
+  }
+}
+
+// autoprefixer test:
+::placeholder {
+  color: gray;
+}

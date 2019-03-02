@@ -11,6 +11,8 @@ group :jekyll_assets do
   gem "sass"
   gem "autoprefixer-rails"
   gem "mini_magick"
+  gem "image_optim"
+  gem "image_optim_pack"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

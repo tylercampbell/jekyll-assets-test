@@ -1,2 +1,1 @@
-x = "Hi from main.js."
-document.getElementById("jsTest").innerHTML = x;
+console.log("Hello from main.js");

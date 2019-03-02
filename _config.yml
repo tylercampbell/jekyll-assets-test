@@ -3,13 +3,30 @@ livereload: true
 plugins :
   - jekyll-assets
 
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - .asset-cache
-  - docker-compose.yml
+assets:
+  autoprefixer:
+    browsers:
+      - '> 0.5%'
+      - 'last 2 versions'
+      - 'Firefox ESR'
+      - 'not dead'
+  digest: false
+  cache: false
+  features:
+    automatic_img_size: false
+  plugins:
+    img:
+      optim:
+        default:
+          verbose: true
+          pngout: false
+          allow_lossy: true
+          jpegtran: { progressive: true }
+          jpegrecompress: { quality: 2 }
+          advpng: false
+          svgo: false
+          jpegoptim: {
+            max_quality: 60,
+            allow_lossy: true,
+            strip: all
+          }
