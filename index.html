@@ -1,6 +1,7 @@
----
+--- 
 layout: default
 ---
+
 <h2>SVG</h2>
 
 <h3>Inline</h3>
@@ -15,22 +16,21 @@ layout: default
   alt='A well-behaved cat'
   id='cat-fill'
   class='testClass' %}
-    
 
 <h2>Raster Images</h2>
 
 {% asset 'unsplash.jpg'
-  width=960 %}
+  width = 960 %}
 
 <h3>Magick</h3>
 
 {% asset 'unsplash.jpg'
-  magick:resize='960'
-  magick:quality='90' %}
+  magick: resize = '960'
+  magick: quality = '90' %}
 
 <h3>Optim</h3>
 
 {% asset 'unsplash.jpg'
-  magick:resize='960'
-  magick:quality='100'
+  magick: resize = '960'
+  magick: quality = '100'
   @optim %}
