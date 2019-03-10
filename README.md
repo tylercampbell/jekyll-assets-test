@@ -1,4 +1,4 @@
-# jekyll-assets-tutorial
+# Jekyll Assets Examples
 Minimal configuration for jekyll 3 with jekyll-assets 3.0
 
 ## Prerequisites
