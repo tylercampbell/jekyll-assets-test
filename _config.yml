@@ -1,4 +1,7 @@
 title: jekyll-assets 3 test
+
+bg_img: unsplash.jpg
+
 livereload: true
 plugins :
   - jekyll-assets

@@ -20,17 +20,34 @@ layout: default
 <h2>Raster Images</h2>
 
 {% asset 'unsplash.jpg'
-  width = '960' %}
+  width=960 %}
 
 <h3>Magick</h3>
 
 {% asset 'unsplash.jpg'
-  magick:resize='960'
-  magick:quality='90' %}
+  magick:resize=960
+  magick:quality=90 %}
 
 <h3>Optim</h3>
 
 {% asset 'unsplash.jpg'
-  magick:resize='960'
-  magick:quality='100'
+  magick:resize=960
+  magick:quality=100
   @optim %}
+
+<h2>Liquid Variables</h2>
+
+{% asset '{{ site.bg_img }}'
+  width=960 %}
+
+<h2>SASS</h2>
+
+<div id="background-image" class="box">
+  <figure class="image is-16by9"></figure>
+</div>
+
+<h3>Liquid Variables in SASS</h3>
+
+<div id="background-image-variable" class="box">
+  <figure class="image is-16by9">not currently working :(</figure>
+</div>

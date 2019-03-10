@@ -12,3 +12,15 @@ svg {
 ::placeholder {
   color: gray;
 }
+
+#background-image {
+  background-image: asset_url("unsplash.jpg magick:resize=960");
+  background-size: cover;
+  background-position: center center;
+}
+
+#background-image-variable {
+  // background-image: asset_url("'{{ site.bg_img }}'");
+  background-size: cover;
+  background-position: center center;
+}
